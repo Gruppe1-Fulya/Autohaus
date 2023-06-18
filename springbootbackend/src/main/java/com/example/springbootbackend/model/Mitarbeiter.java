@@ -20,4 +20,6 @@ public class Mitarbeiter {
     @Column(name = "letzte_verkauf")
     private String letzteVerkauf;
 
+    
+    
 }
