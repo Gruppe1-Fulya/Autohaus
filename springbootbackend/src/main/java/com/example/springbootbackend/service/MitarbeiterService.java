@@ -10,4 +10,7 @@ public interface MitarbeiterService {
     Mitarbeiter getMitarbeiterById(long id);
     Mitarbeiter updateMitarbeiter(Mitarbeiter mitarbeiter, long id);
     void deleteMitarbeiter(long id);
+
+
+
 }

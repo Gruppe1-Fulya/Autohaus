@@ -17,7 +17,6 @@ public class Mitarbeiter {
 
     @Column(name = "position")
     private String Position;
-
     @Column(name = "letzte_verkauf")
     private String letzteVerkauf;
 
