@@ -44,4 +44,9 @@ public class AutoController {
         autoService.deleteAutoById(id);
         return new ResponseEntity<String>("Auto hat erfolgreich geloscht!." , HttpStatus.OK);
     }
+
+    @GetMapping("/getAutoByMarkeAndModell/{marke}/{modell}")
+    public List<Auto> getAutoByMarkeAndModell(@PathVariable String marke, @PathVariable String modell){
+        return autoService.getAutoByMarkeAndModell(marke, modell);
+    }
 }
