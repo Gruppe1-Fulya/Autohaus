@@ -36,14 +36,15 @@ public class AutoServiceImpl implements AutoService {
 
     }
 
+    @Override
+    public List<Auto> getAutoByMarkeAndModell(String marke, String modell) {
+        return autoRepository.findByMarkeAndModell(marke, modell);
+    }
+
     // ?????? Buradan emin degilim ne yapabiliriz.
     // Yapmak istedigim sey marka ve model bilgileri girilerek
     // bi arac listesi cikartmak.
-    @Override
-    public List<Auto> getAutoByMarkeModel(String marke, String model) {
 
-        return null;
-    }
 
     @Override
     public Auto saveAuto(Auto theAuto) {

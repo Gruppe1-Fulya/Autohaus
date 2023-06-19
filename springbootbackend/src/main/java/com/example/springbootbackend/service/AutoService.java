@@ -12,7 +12,7 @@ public interface AutoService {
 
     Auto getAutoById(long theId);
 
-    List<Auto> getAutoByMarkeModel(String marke, String model);
+    List<Auto> getAutoByMarkeAndModell(String marke, String modell);
 
     Auto saveAuto(Auto theAuto);
 
